@@ -32,10 +32,69 @@ Normalizing the data
 Splitting the data into test and train
 
 ## PROGRAM:
-/Write your code here/
-
+~~~
+Developed by: Ragul M
+Reg No: 212221230080
+~~~
+~~~
+import pandas as pd
+import numpy as np
+df = pd.read_csv("/content/Churn_Modelling.csv")
+df.info()
+df.isnull().sum()
+df.duplicated()
+df.describe()
+df['Exited'].describe()
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df1 = df.copy()
+df1["Geography"] = le.fit_transform(df1["Geography"])
+df1["Gender"] = le.fit_transform(df1["Gender"])
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df1[["CreditScore","Geography","Age","Tenure","Balance","NumOfProducts","EstimatedSalary"]] = pd.DataFrame(scaler.fit_transform(df1[["CreditScore","Geography","Age","Tenure","Balance","NumOfProducts","EstimatedSalary"]]))
+df1
+df1.describe()
+X = df1[["CreditScore","Geography","Gender","Age","Tenure","Balance","NumOfProducts","HasCrCard","IsActiveMember","EstimatedSalary"]].values
+print(X)
+y = df1.iloc[:,-1].values
+print(y)
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+print(X_train)
+print("Size of X_train: ",len(X_train))
+print(X_test)
+print("Size of X_test: ",len(X_test))
+X_train.shape
+~~~
 ## OUTPUT:
-/ Show the result/
+### Dataset
+![img 1]()
+
+### Checking for Null Values
+![img 2]()
+
+### Checking for duplicate values
+![img 3]()
+
+### Describing Data
+![img 4]()
+
+### X - Values
+![img 5]()
+
+### Y - Values
+![img 6]()
+
+### X_train values and X_train Size
+![img 7]()
+
+### X_test values and X_test Size
+![img 8]()
+
+### X_train shape
+![img 9]()
 
 ## RESULT
-/Type your result here/
+Data preprocessing is performed in a data set downloaded from Kaggle.
