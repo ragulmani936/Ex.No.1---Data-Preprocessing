@@ -70,31 +70,31 @@ X_train.shape
 ~~~
 ## OUTPUT:
 ### Dataset
-![img 1]()
+![img 1](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%201.png)
 
 ### Checking for Null Values
-![img 2]()
+![img 2](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%202.png)
 
 ### Checking for duplicate values
-![img 3]()
+![img 3](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%203.png)
 
 ### Describing Data
-![img 4]()
-
+![img 4](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%204.png)
+![img 5](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%205.png)
 ### X - Values
-![img 5]()
+![img 6](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%206.png)
 
 ### Y - Values
-![img 6]()
+![img 7](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%207.png)
 
 ### X_train values and X_train Size
-![img 7]()
+![img 8](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/mg%208.png)
 
 ### X_test values and X_test Size
-![img 8]()
+![img 9](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%209.png)
 
 ### X_train shape
-![img 9]()
+![img 10](https://github.com/ragulmani936/Ex.No.1---Data-Preprocessing/blob/main/img%2010.png)
 
 ## RESULT
 Data preprocessing is performed in a data set downloaded from Kaggle.
